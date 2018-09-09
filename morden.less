@@ -476,6 +476,7 @@ body{
 }
 .movie-slide {
     .frame();
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -697,10 +698,11 @@ body{
 
 .job-container{
     .frame();
+    position: fixed;
     color:#fff;
     transition: 1000ms;
     transform-origin: 0% 100%;
-    overflow: hidden;
+    overflow: auto;
     z-index: 21;
     /* 滚动槽 */
     &::-webkit-scrollbar-track {
@@ -722,7 +724,6 @@ body{
         height: 100%;
         margin: 0 auto;
         max-width: 700px;
-        overflow: auto;
         h1,h2,h3{
             color:inherit;
         }
@@ -800,7 +801,7 @@ body{
     text-align: center;
     padding-top: 54px;
     position: sticky;
-    z-index: 30;
+    z-index: 4000;
     bottom: 30px;
     label{
         position: relative;
@@ -811,8 +812,8 @@ body{
         background-color: #fff;
         padding: 10px 45px;
         text-decoration: none;
-        opacity: 0;
         transition: padding .3s;
+        box-shadow: 0 3px 12px rgba(0,0,0,.23);
         &:hover{
             padding: 10px 50px;
         }
