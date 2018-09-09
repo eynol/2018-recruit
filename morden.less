@@ -392,8 +392,11 @@ color: #ff3356;
     position: fixed;
     left: 0;
     top: 0;
+    bottom: 0;
+    right: 0;
     height: 100%;
     width: 100%;
+
     padding: 30px;
     font-size: 18px;
     color: #fff;
@@ -466,6 +469,7 @@ body{
     width: 100%;
     top: 0;
     left: 0;
+    overflow: hidden;
 }
 .frame-begin{
     .frame();
@@ -719,7 +723,7 @@ body{
     color:#fff;
     transition: 1000ms;
     transform-origin: 0% 100%;
-    overflow: auto;
+    overflow: hidden;
     // background-color: #c22830;
     z-index: 21;
     /* 滚动槽 */
@@ -745,6 +749,7 @@ body{
         height: 100%;
         margin: 0 auto;
         max-width: 700px;
+        overflow: auto;
         h1,h2,h3{
             color:inherit;
         }
@@ -823,6 +828,7 @@ body{
     padding-bottom: 30px;
     margin-top: 54px;
     position: sticky;
+    z-index: 30;
     bottom: 30px;
     label{
         position: relative;
