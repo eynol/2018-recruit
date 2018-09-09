@@ -1,0 +1,130 @@
+@keyframes blur-txt-white {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 30px #fff;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #c22830;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 30px #fff;
+  }
+}
+@keyframes blur-txt-red {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 30px #ec4a4a;
+  }
+  50% {
+    opacity: 1;
+    text-shadow: 0 0 10px #fff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 30px #ec4a4a;
+  }
+}
+@keyframes slide-down {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-110%);
+  }
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(110%);
+  }
+}
+@keyframes shufle {
+  0% {
+    opacity: 1;
+    transform: rotateZ(90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slide-up-20 {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes begin-btn-flip-cover {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateY(180deg);
+  }
+}
+@keyframes begin-btn-flip-background {
+  from {
+    opacity: 1;
+    transform: rotateY(180deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+}
+@keyframes takeover-begin-btn-flip {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes title-slide-boxout {
+  from {
+    transform: translateX(calc(-100% - 20px ));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes title-cover-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(110%);
+  }
+}
+@keyframes point-right {
+  0% {
+    opacity: 1;
+    transform: translateX(0) rotateX(0);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(10px) rotateX(360deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotateX(0);
+  }
+}
