@@ -536,6 +536,9 @@ mark {
     display: none;
   }
 }
+#小老弟_你干啥呢:checked ~ .劝退 {
+  display: none;
+}
 .blur-background-red {
   position: fixed;
   z-index: -1;
@@ -659,7 +662,7 @@ body {
 }
 .frame {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   top: 0;
   left: 0;
@@ -667,7 +670,7 @@ body {
 }
 .frame-begin {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   top: 0;
   left: 0;
@@ -675,7 +678,7 @@ body {
 }
 .movie-slide {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   top: 0;
   left: 0;
@@ -739,7 +742,7 @@ body {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: #ec4a4a;
   transform: rotateY(180deg);
   transform-origin: 50% 50%;
@@ -793,7 +796,9 @@ body {
   padding: 20px;
   border-left: 6px solid currentColor;
   width: 400px;
-  overflow: hidden;
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto;
 }
 .main-content .summary .cover:nth-child(1) {
   color: inherit;
@@ -1184,7 +1189,7 @@ body {
 }
 .frame-main {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   top: 0;
   left: 0;
@@ -1202,7 +1207,7 @@ body {
 }
 .job-container {
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   top: 0;
   left: 0;
@@ -1231,7 +1236,7 @@ body {
 }
 .job-container .job-content {
   padding: 10vh 20px;
-  height: 100%;
+  height: 100vh;
   margin: 0 auto;
   max-width: 700px;
 }

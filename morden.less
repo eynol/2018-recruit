@@ -386,34 +386,36 @@ color: #ff3356;
 
 
 @media screen and (max-width: 768px) {
-.劝退 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
+    .劝退 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
 
-    padding: 30px;
-    font-size: 18px;
-    color: #fff;
-    letter-spacing: 2px;
-    font-weight: bolder;
-    z-index: 1000000;
-    background:rgba(188, 20, 20, 0.88);
-}
+        padding: 30px;
+        font-size: 18px;
+        color: #fff;
+        letter-spacing: 2px;
+        font-weight: bolder;
+        z-index: 1000000;
+        background:rgba(188, 20, 20, 0.88);
+    }
 }
 @media screen and (min-width: 768px) {
     .劝退 {
         display: none;
     }
 }
-
+#小老弟_你干啥呢:checked ~ .劝退 {
+    display: none;
+}
 .blur-background() {
     position: fixed;
     z-index: -1;
@@ -464,7 +466,7 @@ body{
 
 .frame {
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     top: 0;
     left: 0;
@@ -530,7 +532,7 @@ body{
                     top: 0px;
                     left: 0px;
                     width: 100%;
-                    height: 100%;
+                    height: 100vh;
                     background:#ec4a4a;
                     transform: rotateY( 180deg );
                     transform-origin: 50% 50%;
@@ -624,7 +626,9 @@ body{
         padding: 20px;
         border-left: 6px solid currentColor;
         width: 400px;
-        overflow: hidden;
+        max-width: 90vw;
+        max-height: 90vh;
+        overflow: auto;
         .loop-cover(16);
         hr{
             opacity: 0;
@@ -720,7 +724,7 @@ body{
     }
     .job-content{
         padding: 10vh 20px;
-        height: 100%;
+        height: 100vh;
         margin: 0 auto;
         max-width: 700px;
         h1,h2,h3{
