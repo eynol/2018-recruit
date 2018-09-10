@@ -413,9 +413,7 @@ color: #ff3356;
         display: none;
     }
 }
-#永远的倔强:checked ~ .劝退{
-    display: none;
-}
+
 .blur-background() {
     position: fixed;
     z-index: -1;
@@ -753,6 +751,16 @@ body{
 
 }
 
+@media screen and (min-width:768px){
+    .frame-main:before{
+        opacity: 0;
+        width: 100vw;
+        height: 100vh;
+        transform-origin: left;
+        transform: translateX(-100%)
+    }
+}
+
 .blur-background-red {
     opacity: 0;
     transition:500ms;
@@ -762,6 +770,22 @@ body{
     #frame-1:checked ~ & {
         animation-play-state: running;
     }
+}
+
+.loop-jobs-slide(@counter) when (@counter>0){
+    
+    .loop-jobs-slide(@counter - 1 ) ;
+
+    #job-@{counter}:checked {
+        & ~ .frame-main:before {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+
+@media screen and (min-width:768px){   
+    .loop-jobs-slide(6);
 }
 
 .loop-jobs(@counter) when (@counter>0){
@@ -800,7 +824,7 @@ body{
 
 .job-container-close {
     text-align: center;
-    padding-top: 54px;
+    margin-top: 54px;
     position: sticky;
     z-index: 4000;
     bottom: 30px;

@@ -536,9 +536,6 @@ mark {
     display: none;
   }
 }
-#永远的倔强:checked ~ .劝退 {
-  display: none;
-}
 .blur-background-red {
   position: fixed;
   z-index: -1;
@@ -1262,6 +1259,15 @@ body {
   transition-timing-function: cubic-bezier(0.27, 0.48, 0.45, 0.94);
   transform: rotateZ(90deg);
 }
+@media screen and (min-width: 768px) {
+  .frame-main:before {
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    transform-origin: left;
+    transform: translateX(-100%);
+  }
+}
 .blur-background-red {
   opacity: 0;
   transition: 500ms;
@@ -1271,6 +1277,32 @@ body {
 }
 #frame-1:checked ~ .blur-background-red {
   animation-play-state: running;
+}
+@media screen and (min-width: 768px) {
+  #job-1:checked ~ .frame-main:before {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  #job-2:checked ~ .frame-main:before {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  #job-3:checked ~ .frame-main:before {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  #job-4:checked ~ .frame-main:before {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  #job-5:checked ~ .frame-main:before {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  #job-6:checked ~ .frame-main:before {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 .container-job-1 {
   opacity: 0;
@@ -1389,7 +1421,7 @@ body {
 }
 .job-container-close {
   text-align: center;
-  padding-top: 54px;
+  margin-top: 54px;
   position: sticky;
   z-index: 4000;
   bottom: 30px;
